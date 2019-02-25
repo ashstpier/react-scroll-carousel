@@ -1,8 +1,32 @@
-/* add css styles here (optional) */
-
-.test {
+.wrapper {
+  position: relative;
   display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+  max-width: 100%;
+}
+.slider {
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.slide {
+  flex-shrink: 0;
+}
+
+.nextArrow, .prevArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(255,255,255,0.75);
+}
+.nextArrow {
+  right: 0;
+  padding: 6px 2px 6px 6px;
+}
+.prevArrow {
+  left: 0;
+  padding: 6px 6px 6px 2px;
 }

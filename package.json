@@ -57,5 +57,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "css-scroll-snap-polyfill": "^0.1.2"
+  }
 }
